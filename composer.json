@@ -1,0 +1,22 @@
+{
+  "autoload": {
+    "psr-4": {"Phizzl\\Silex\\Provider\\": "src/"}
+  },
+  "tags": ["silex", "json"],
+  "require": {
+    "codeception/codeception": "^2.2",
+    "silex/silex": "^2.1"
+  },
+  "licence": "GPL-3.0",
+  "bin": [],
+  "name": "phizzl/silex-jsonrequestprovider",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Phillip Schleicher",
+      "email": "the@phizzl.de",
+      "homepage": "http://phizzl.de",
+      "role": "Developer"
+    }
+  ]
+}
