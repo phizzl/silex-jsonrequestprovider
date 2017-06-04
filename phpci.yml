@@ -1,0 +1,26 @@
+build_settings:
+  verbose: false
+  prefer_symlink: false
+
+setup:
+  composer:
+    action: "install"
+    prefer_dist: false
+
+test:
+  php_parallel_lint:
+    ignore:
+      - vendor/
+      - tests/
+
+  codeception:
+    config: codeception.yml
+
+failure:
+  email:
+    committer: true
+    default_mailto_address: the@hizzl.de
+
+complete:
+  email:
+    default_mailto_address: the@hizzl.de
