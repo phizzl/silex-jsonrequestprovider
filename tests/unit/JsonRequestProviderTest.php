@@ -60,7 +60,7 @@ class JsonRequestProviderTest extends \Codeception\Test\Unit
         $request = $this->createMock('Symfony\Component\HttpFoundation\Request');
         $request->headers = new HeaderBag(['Content-Type' => 'multipart/form-data']);
 
-        $request->expects($this->never())->method('getContent');
+        $request->expects($this->once())->method('getContent');
         $provider = new JsonRequestProvider();
 
         $provider->doJsonRequestHandling($request);
